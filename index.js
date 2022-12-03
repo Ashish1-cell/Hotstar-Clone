@@ -3,7 +3,7 @@ let movies = [
     name: "falcon and the winter soldier",
     des:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit porro et veniam excepturi, eaque voluptatem impedit nulla laboriosam facilis ut laboriosam libero!",
-    image: "Images/slider 2.png"
+    image: "Images/slider 2.PNG"
   },
   {
     name: "loki",
@@ -101,16 +101,16 @@ videocards.forEach(item => {
 //card sliders
 
 let cardcontainers = [...document.querySelectorAll(".card-container")];
-let preBtns = [...document.querySelectorAll(".pre-btn")];
-let nxtBtns = [...document.querySelectorAll(".nxt-btn")];
+let preBttns = [...document.querySelectorAll(".pre-bttn")];
+let nxtBttns = [...document.querySelectorAll(".nxt-bttn")];
 
-cardcontainers.forEach((item, i) => {
+cardcontainers.forEach((items, i) => {
   let containerDimensions = item.getBoundingClientRect();
   let containerWidth = containerDimensions.width;
-  nxtBtns[i].addEventListener("click", () => {
+  nxtBttns[i].addEventListener("click", () => {
     item.scrollLeft += containerWidth - 200;
   });
-  preBtns[i].addEventListener("click", () => {
+  preBttns[i].addEventListener("click", () => {
     item.scrollLeft -= containerWidth + 200;
   });
 });
