@@ -266,7 +266,7 @@ body{
 }
 
 .des{
-    color:rgb(146, 41, 41);
+    color:#fff;
    
     opacity: 0.8;
     margin: 5px 0;
@@ -297,7 +297,7 @@ body{
     left: -5px;
     height: 35px;
     width: 35px;
-    background-image:url(/images/add.png);
+    background-image:url(images/add.png);
     background-size: cover;
     transform: scale(0.4);
 }
